@@ -1,25 +1,21 @@
 /*
-Long-Distance Calls
-
-A long-distance carrier charges the following rates for telephone calls between the United
-States and Mexico:
+Parking Lot
+A parking lot charges the following rates for parking
 __________________________________________________________________________________________
- Starting Time of Call 				Rate per Minute
+ Number of hour				                    Rate per hour
 __________________________________________________________________________________________ 
- 00:00–06:59							$0.12
- 07:00–19:00							 0.55
- 19:01–23:59							 0.35
+<2                                                              $2
+over 2 but no more than 4                                       $1.75
+>5                                                              $1.50
 __________________________________________________________________________________________
 
-Write a program that asks for the starting time and the number of minutes of the call, and
-displays the charges. The program should ask for the time to be entered as a floating-point
-number in the form HH.MM. For example, 07:00 hours will be entered as 07.00, and
-16:28 hours will be entered as 16.28.
-	
-	Input Validation: The program should not accept times that are greater than 23:59.
-	Also, no number whose last two digits are greater than 59 should be accepted.
-	Hint: Assuming num is a floating-point variable, the following expression will give you
-	its fractional part:
+write a program that asks for the starting and ending times of a parked car and displays the amount to be paid.
+The program should ask for the times to be entered as floating-point numbers in the form HM.MM.For example,07:00 hours will be entered as 07.00,and 16:28 hours will be entered as 16.28.
+Note that each initiated hour must be paid in full.For example,1 hour and 3 mintes will cost $4.
+
+Input validation:The program should not accept times that are greater than 21:59 or less than 07:00,the operating hours of the parking lot.
+Also,no number whose last two digits are greater than 59 should be accepted.
+Hint:You can get the minutes of the time by multiplying the time by 100 and then taking the remainder of the division by 100
 	
 	num - static_cast<int>(num)
 */
